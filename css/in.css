@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-stone-700 text-xl text-stone-300;
+}
+#app {
+	@apply w-96 bg-stone-800 rounded-lg mx-auto mt-3 p-3 grid gap-y-3;
+}
+#topbar {
+	@apply grid grid-cols-8;
+
+}
+#newtask {
+	@apply aspect-square bg-stone-600 text-stone-300 rounded-lg col-start-8;
+}
+#form {
+	@apply grid grid-cols-8 gap-3;
+}
+#inputfield {
+	@apply rounded-lg bg-stone-600 text-stone-300 p-3 col-span-6;
+}
+#submitbtn {
+	@apply rounded-lg bg-stone-500 text-stone-200 p-3 col-span-2;
+}
+.todolist {
+	@apply grid gap-3;
+}
+.todo {
+	@apply bg-stone-600 p-3 rounded-lg flex justify-between;
+}
+.todo.done .todo-text{
+	@apply line-through text-stone-500;
+}
+.todo-text {
+	@apply text-left align-bottom flex-grow;
+}
+.delbutton {
+	@apply bg-stone-800 text-center rounded-lg col-start-4 aspect-square px-2;
+}
+.title {
+	@apply w-96 bg-stone-900 text-2xl mx-auto mt-3 p-3 text-center rounded-l rounded-lg;
+}
